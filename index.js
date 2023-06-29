@@ -5,7 +5,7 @@ let mensaje =document.querySelector(".mensaje")
 let link;
 let imagen;
 
-mensaje.innerHTML="LISTA ESTA VACIA"
+mensaje.innerHTML="LA LISTA ESTA VACIA"
 
 function llamarApi(){
   fetch(url)
