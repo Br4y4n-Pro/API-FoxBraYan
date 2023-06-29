@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Courgette&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  font-family: 'Cherry Cream Soda', cursive;
+}
+nav{
+  font-family: 'Cherry Cream Soda', cursive;
+
+}
+
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Cherry Cream Soda', cursive;
+
+}
+.principal{
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3em 0px;
+}
+
+.principal .contenedor_img{
+  text-align: center;
+  height: 50vh;
+  width: 80%;
+}
+
+.principal .contenedor_imagen{
+  width: 100%;
+  height: 100%;
+}
+.principal .contenedor_imagen img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.principal .contenedor_img p{
+  margin: 1em;
+}
+
+.principal .contenedor_img p a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: .3s ease;
+
+}
+.principal .contenedor_img p a:hover{
+  color: crimson;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.btn-contenedor button{
+  border: none;
+  padding: 1em;
+  margin: 1em 0em;
+  font-family: 'Cherry Cream Soda', cursive;
+  background-color: rgb(177, 159, 194);
+  border-radius: 1em;
+  transition: .3s ease-in-out;
+}
+.btn-contenedor button:hover{
+  background-color: rgb(157, 134, 179);
+  transition: all .3s ease;
+
+}
+
+
+.mensaje{
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Cherry Cream Soda', cursive;
+}
+
+/* LISTA  */
+.lista{
+  margin: 2em;
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.lista-zone{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 3px solid black;
+  margin: 1em 0;
+}
+
+.lista-zone .contenido_lista{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  height: 300px;
+  gap: 1em;
+  }
+
+  .lista-zone .contenido_lista .contenedor_imagen{
+
+    overflow: hidden;
+    border-radius: 100%;
+  }
+
+
+.lista-zone .contenido_lista .contenedor_imagen img{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.lista-zone .contenido_lista p a{
+  text-decoration: none;
+  color: black;
+}
+
+.btn-contenido button{
+  border:none;
+  padding: 1em;
+  background-color: rgb(105, 90, 119);
+  color: white;
+  font-family: 'Cherry Cream Soda', cursive;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+.btn-contenido button:hover{
+  background-color: rgb(145, 112, 177);
+  transition: .5s ease;
+
+  
+}
+
+
+
+.modal-fondo{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.548);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido_modal{
+  background-color: azure;
+  padding: 3em;
+  border-radius: 1em;
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  text-align: center;
+}
+.contenido_modal img{
+  width: 100%;
+  max-width: 1024px;
+  border-radius: center;
+}
+
+.contenido_modal p a{
+  text-decoration: none;
+  color: #000;
+}
+
+.contenido_modal button{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 1em;
+  border:none;
+  font-family: 'Cherry Cream Soda', cursive;
+  background-color: transparent;
+  transition: .5s ease;
+  padding: .3em;
+  border-radius: 50%;
+}
+
+.contenido_modal button:hover{
+  background-color: rgba(255, 0, 0, 0.644);
+  transition: .5 ease;
+}
+@media (max-width:600px) {
+ 
+  .lista{
+    width: 90%;
+    gap: 1em;
+  }
+  .lista-zone{
+    padding: 1em;
+    flex-direction: column;
+  }
+
+  .contenido_lista{
+    flex-direction: column;
+  }
+  .btn-contenido button{
+    margin-bottom: 1em;
+  }
+}
